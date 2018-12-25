@@ -1,0 +1,10 @@
+{
+  "name": "Technical Translations",
+  "description": "Welcome to Technical Translations",
+  "keywords": ["asp.net", "heroku", "buildpack"],
+  "repository": "https://github.com/mickjar/TechnicalTranslations",
+  "website": "https://techlations.herokuapp.com",
+  "buildpacks": [{
+    "url": "https://github.com/zhongzf/aspnetcore-buildpack.git"
+  }]
+}
