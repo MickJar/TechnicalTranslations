@@ -1,10 +1,24 @@
 {
   "name": "Technical Translations",
   "description": "Welcome to Technical Translations",
-  "keywords": ["asp.net", "heroku", "buildpack"],
-  "repository": "https://github.com/mickjar/TechnicalTranslations",
-  "website": "https://techlations.herokuapp.com",
-  "buildpacks": [{
-    "url": "https://github.com/zhongzf/aspnetcore-buildpack.git"
-  }]
+  "logo": "https://raw.githubusercontent.com/herokumx/herokumxnet/master/NETChatterGroup.png",
+  "keywords": ["heroku", "asp.net-core"],
+  "env": {
+    "PUBLISH_APP_DIR": {
+      "description": "The relative path to main published project",
+      "value" : "/TechnicalTranslations"
+    },
+    "LAUNCH_ASSEMBLY_NAME": {
+      "description": "The assembly name, that will be used to run app using Kestrel",
+      "value": "TechnicalTranslations.dll"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/ORuban/aspnetcore-buildpack.git"
+    }
+  ]
 }
