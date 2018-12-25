@@ -1,0 +1,16 @@
+{
+  "name": "TechnicalTranslations",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mickjar/TechnicalTranslations.git"
+  },
+  "scripts": {
+      "preinstall": "npm list bower -g || npm install bower -g",
+      "postinstall": "bower cache clean"
+  },
+  "homepage": "https://github.com/mickjar/TechnicalTranslations#readme",
+  "dependencies": {
+  }
+}
